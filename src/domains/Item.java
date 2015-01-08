@@ -8,9 +8,15 @@ public class Item {
     private String name;
     private String unit;
     private double price;
-    private double discount;
+    private double discount=0;
     private boolean promotion = false;
     private int count;
+
+	private double vipDiscount=1;
+
+	public double getvipDiscount(){return vipDiscount ;}
+
+	public void setVipDiscount(double  a){this.vipDiscount = a;};
 
     public String getName() {
         return name;
